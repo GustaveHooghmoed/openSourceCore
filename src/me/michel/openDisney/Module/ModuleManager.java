@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class ModuleManager {
 
-    public ArrayList<Module> modules = new ArrayList<Module>();
+    private ArrayList<Module> modules = new ArrayList<>();
 
     public ModuleManager() {
         registerModules();
@@ -35,6 +35,10 @@ public class ModuleManager {
         for (Module m : modules) {
             m.unload();
         }
+    }
+
+    public Module getModule(int id) {
+        return modules.get(id);
     }
 
     public void unloadModule(Module m) {

@@ -22,12 +22,6 @@ public class BukkitCommand extends org.bukkit.command.Command {
     public BukkitCompleter completer;
     private CommandExecutor executor;
 
-    /**
-     * A slimmed down PluginCommand
-     *
-     * @param name
-     * @param owner
-     */
     public BukkitCommand(String label, CommandExecutor executor, Plugin owner) {
         super(label);
         this.executor = executor;

@@ -30,6 +30,11 @@ public class ParkModule implements Module {
         this.MySQLMan.reloadMethods();
     }
 
+    @Override
+    public MySQLManager getMySQLManager() {
+        return this.MySQLMan;
+    }
+
     public me.michel.openDisney.Commands.CommandFramework getCommandFramework() {
         return CommandFramework;
     }

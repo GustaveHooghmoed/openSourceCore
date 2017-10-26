@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class EventManager {
 
-    private ArrayList<Event> events = new ArrayList<Event>();
+    private ArrayList<Event> events = new ArrayList<>();
 
     public EventManager() {
 

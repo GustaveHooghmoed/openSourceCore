@@ -49,7 +49,6 @@ public class Core extends JavaPlugin {
         commandManager = new CommandFramework(core);
         mySQLMan = new MySQLManager();
         moduleMan = new ModuleManager();
-
     }
 
     @Override

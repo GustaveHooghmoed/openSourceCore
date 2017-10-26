@@ -6,5 +6,4 @@ public interface Event extends Listener {
 
     void setup();
 
-
 }
