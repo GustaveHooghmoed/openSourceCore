@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="openDisney:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/openDisney_jar</output-path>
+    <root id="archive" name="openDisney.jar">
+      <element id="module-output" name="openDisney" />
+    </root>
+  </artifact>
+</component>
