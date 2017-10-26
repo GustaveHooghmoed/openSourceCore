@@ -12,16 +12,18 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 public class ExampleEvent implements Listener, Event {
 
+    private Module parkModule;
+    private MySQLManager mySQLManager;
+
     @Override
     public void setup() {
-
+        this.parkModule = Core.getModuleMan().getModule(1);
+        this.mySQLManager = parkModule.getMySQLManager();
     }
 
     @EventHandler
     public void ExampleEvent(PlayerJoinEvent event) {
         Data data = new Data(1, event.getPlayer());
-        Module parkModule = Core.getModuleMan().getModule(1);
-        MySQLManager mySQLManager = parkModule.getMySQLManager();
         mySQLManager.executeMethod(new CoinsMethod(), data);
     }
 }
