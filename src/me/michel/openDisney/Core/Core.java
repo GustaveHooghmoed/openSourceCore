@@ -55,8 +55,8 @@ public class Core extends JavaPlugin {
     public void onDisable() {
         moduleMan.unloadModules();
         mySQLMan.closeDataSource();
-        mySQLMan = null;
         moduleMan = null;
+        mySQLMan = null;
         world = null;
         plugin = null;
         core = null;
